@@ -7,7 +7,7 @@ services:
         ports:
             - 8080:80
         volumes:
-            - "${PROJECT_ROOT}:/var/www/html:ro"
+            - "$(pwd)/web:/var/www/html:ro"
         networks:
             - app-network
         depends_on:
