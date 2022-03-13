@@ -4,7 +4,7 @@ grant all on bulgaria.* to 'web_user'@'%' identified by 'Password1';
 USE bulgaria;
 
 CREATE TABLE `region` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `region_name` varchar(100) DEFAULT NULL,
   `men` bigint(20) UNSIGNED DEFAULT NULL,
   `women` bigint(20) UNSIGNED DEFAULT NULL
